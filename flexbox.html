@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Hub de Aulas</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Flexbox</h1>
+        <p>Aprenda a organizar e alinhar elementos com Flexbox.</p>
+        <a href="index.html">← Voltar ao Hub</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. O que é Flexbox?</h2>
+            <p>
+                Flexbox é um modelo de layout do CSS que facilita a organização,
+                o alinhamento e a distribuição de elementos dentro de um contêiner.
+                Ele é muito utilizado para criar menus, cartões e organizar conteúdos
+                em diferentes tamanhos de tela.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Como ativar o Flexbox?</h2>
+            <p>
+                Para utilizar o Flexbox, aplicamos a propriedade
+                <code>display: flex</code> no elemento que contém os itens.
+            </p>
+
+            <pre><code>.container {
+    display: flex;
+}</code></pre>
+
+            <p>
+                O elemento que recebe essa propriedade passa a ser o contêiner flexível,
+                e seus elementos filhos diretos tornam-se itens flexíveis.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Principais propriedades</h2>
+
+            <h3>flex-direction</h3>
+            <p>Define a direção em que os itens serão organizados.</p>
+            <pre><code>flex-direction: row;
+flex-direction: column;</code></pre>
+            <p><strong>row:</strong> organiza os itens em uma linha.</p>
+            <p><strong>column:</strong> organiza os itens em uma coluna.</p>
+
+            <h3>justify-content</h3>
+            <p>Distribui os itens ao longo do eixo principal.</p>
+            <pre><code>justify-content: center;
+justify-content: space-between;
+justify-content: space-around;</code></pre>
+
+            <h3>align-items</h3>
+            <p>Alinha os itens no eixo transversal do contêiner.</p>
+            <pre><code>align-items: center;
+align-items: flex-start;
+align-items: flex-end;</code></pre>
+
+            <h3>flex-wrap</h3>
+            <p>Permite que os itens passem para outra linha quando necessário.</p>
+            <pre><code>flex-wrap: wrap;</code></pre>
+
+            <h3>gap</h3>
+            <p>Define o espaço entre os itens.</p>
+            <pre><code>gap: 20px;</code></pre>
+
+            <h3>flex-grow</h3>
+            <p>Define quanto um item pode crescer para ocupar o espaço disponível.</p>
+            <pre><code>.item {
+    flex-grow: 1;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>4. Exemplo prático</h2>
+            <p>
+                No exemplo abaixo, os cartões são organizados lado a lado,
+                com espaçamento entre eles.
+            </p>
+
+            <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}</code></pre>
+
+            <div class="demo-flex">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Quando utilizar Flexbox?</h2>
+            <ul>
+                <li>Para organizar menus de navegação.</li>
+                <li>Para alinhar botões e ícones.</li>
+                <li>Para centralizar elementos na página.</li>
+                <li>Para distribuir cartões e componentes em uma linha ou coluna.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hub de Aulas — HTML &amp; CSS</p>
+    </footer>
+
+</body>
+</html>
